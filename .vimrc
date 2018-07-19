@@ -1,3 +1,4 @@
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -7,9 +8,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'vim-scripts/AutoClose'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/emmet-vim'
+Plugin 'tylerbrazier/vim-tagpair'
 Plugin 'tpope/vim-eunuch'
 Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()            " required
@@ -29,4 +31,5 @@ set nowrap
 set sidescroll=1
 autocmd VimEnter * NERDTree
 command! -nargs=0 Sw w !sudo tee % > /dev/null
+set autoindent noexpandtab tabstop=4 shiftwidth=4
 let g:NERDTreeWinSize=15
